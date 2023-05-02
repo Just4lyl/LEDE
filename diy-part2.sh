@@ -12,3 +12,4 @@
 
 # Modify default IP
 sed -i 's/firewall/firewall4/g' include/target.mk
+sed -i 's/+firewall/+uci-firewall/g' feeds/luci/applications/luci-app-firewall/Makefile
