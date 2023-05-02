@@ -14,5 +14,5 @@
 sed -i 's/firewall/firewall4/g' include/target.mk
 sed -i 's/+firewall/+uci-firewall/g' feeds/luci/applications/luci-app-firewall/Makefile
 sed -i 's/2:-dhcp/2:-pppoe/g' package/base-files/files/lib/functions/uci-defaults.sh
-sed -i 's/'username'/'07159432516'/g' package/base-files/files/bin/config_generate
-sed -i 's/'password'/'134520'/g' package/base-files/files/bin/config_generate
+sed -i 's/username='username'/username='07159432516'/g' package/base-files/files/bin/config_generate
+sed -i 's/password='password'/password='134520'/g' package/base-files/files/bin/config_generate
